@@ -50,8 +50,13 @@
   background-color: darkslategrey;
 }
 .card-height {
-  max-height: 25rem !important;
+  max-height: 20rem !important;
 }
 .card-img {
   max-height: 10rem !important;
+}
+.text-truncate {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }

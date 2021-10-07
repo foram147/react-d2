@@ -23,7 +23,7 @@ const MyNav = () => {
           placeholder="Browse"
           aria-label="Browse"
           aria-describedby="basic-addon2"
-        />
+        ></FormControl>
       </Navbar.Collapse>
     </Navbar>
   );

@@ -6,7 +6,7 @@ class LatestRelease extends Component {
   render() {
     return (
       <Container fluid="xl">
-        <Row>
+        <Row className="card-row">
           {books.map((book) => (
             <Col sm={6} lg={3}>
               <Card
@@ -15,7 +15,9 @@ class LatestRelease extends Component {
               >
                 <Card.Img className="card-img" variant="top" src={book.img} />
                 <Card.Body>
-                  <Card.Title>{book.title}</Card.Title>
+                  <Card.Title className="text-truncate">
+                    {book.title}
+                  </Card.Title>
                   <Card.Text>{book.price}</Card.Text>
                   <Button variant="primary">Go somewhere</Button>
                 </Card.Body>
